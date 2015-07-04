@@ -1,4 +1,5 @@
-# BBMP-Online-Voting-Portal
+# Bruhat Bengaluru Mahanagara Palike-Online-Voting-Portal Design
+
 Online voting portal is a voting system that facilitates the Citizen-eligible for voting, Candidate-who are going to stand in elections for their respective party, Election Commission Officer-who will verify whether registered user and candidates are authentic to participate in online voting.
 
 Election and voting are well known things in modern days. Electronic online voting over the Internet will be easier and many voters would appreciate the possibility of voting from anywhere.
