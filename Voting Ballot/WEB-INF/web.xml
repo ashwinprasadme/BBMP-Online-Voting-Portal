@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>VotingBallet</display-name>
+
+	<servlet>
+		<servlet-name>Init</servlet-name>
+		<servlet-class>com.aklc.servlet.InitServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>Reg</servlet-name>
+		<servlet-class>com.aklc.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reg</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Reg2</servlet-name>
+		<servlet-class>com.aklc.servlet.Register2Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reg2</servlet-name>
+		<url-pattern>/register2</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.aklc.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Login2</servlet-name>
+		<servlet-class>com.aklc.servlet.Login2Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login2</servlet-name>
+		<url-pattern>/login2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.aklc.servlet.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>electionList</servlet-name>
+		<servlet-class>com.aklc.servlet.ElectionListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>electionList</servlet-name>
+		<url-pattern>/electionList</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>votenow</servlet-name>
+		<servlet-class>com.aklc.servlet.VoteNowServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>votenow</servlet-name>
+		<url-pattern>/votenow</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>vote</servlet-name>
+		<servlet-class>com.aklc.servlet.VoteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>vote</servlet-name>
+		<url-pattern>/vote</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>resultList</servlet-name>
+		<servlet-class>com.aklc.servlet.ResultListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>resultList</servlet-name>
+		<url-pattern>/resultList</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>results</servlet-name>
+		<servlet-class>com.aklc.servlet.ResultsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>results</servlet-name>
+		<url-pattern>/results</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
